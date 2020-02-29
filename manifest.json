@@ -1,0 +1,18 @@
+{
+   "manifest_version": 2,
+   "name": "東吳選課作業時間無限",
+   "description": "破解東吳大學校務行政資訊系統TimeOut，不會被強制登出。",
+    "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "128": "icon128.png"
+  },
+   "version": "1.0",
+   "browser_action": {
+      "default_popup": "index.html"
+   },
+	"permissions": [
+		"cookies",
+		"https://web.sys.scu.edu.tw/*"
+	]
+}
