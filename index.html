@@ -3,61 +3,64 @@
 <html lang="zh">
 
 <head>
-<style>
-    html {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        width: 230px;
-        background: rgb(255, 255, 255);
-        border: 0;
-        box-shadow: none;
-        padding-bottom: 10px;
-    }
-    h1 {
-        color: #aaa;
-        font-size: 12px;
-        text-align: center;
-        margin: 0 10px 10px;
-        border-bottom: 1.5px solid rgb(156, 154, 154);
-        line-height: 40px;
-    }
-    a {
-        display: block;
-        line-height: 40px;
-        color: rgb(5, 5, 5);
-        background-color: antiquewhite;
-        font-size: 17px;
-        padding: 10px;
-        padding-left: 30px;
-        text-decoration: none;
-    }
-    img {
-        display: block;
-        width: 200px;
-        height: auto;
-        padding: 15px;
-        text-decoration: none;
-    }
-    a:hover {
-        background: rgb(190, 73, 73);
-        color: #fff;
-    }
-    p {
-        width: auto;
-        font-size: xx-small;
-        background-color: black;
-        color: white;
-        padding-right: 5%;
-        text-align: right;
-    }
+    <style>
+        html {
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 5px;
+        }
 
-</style>
-<meta charset="utf-8">
+        body {
+            margin: 0;
+            padding: 0;
+            width: 230px;
+            background: rgb(255, 255, 255);
+            border: 0;
+            box-shadow: none;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            color: #aaa;
+            font-size: 12px;
+            text-align: center;
+            margin: 0 10px 10px;
+            border-bottom: 1.5px solid rgb(156, 154, 154);
+            line-height: 40px;
+        }
+
+        a {
+            display: block;
+            line-height: 40px;
+            color: rgb(5, 5, 5);
+            background: antiquewhite;
+            font-size: 17px;
+            padding: 10px;
+            padding-left: 30px;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            height: auto;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: rgb(190, 73, 73);
+            color: #fff;
+        }
+
+        #maker {
+            width: auto;
+        }
+        .container:hover {
+            opacity: 0.5;
+        }
+    </style>
+    <meta charset="utf-8">
 </head>
 
 <body>
@@ -67,11 +70,21 @@
 
     <h1 id="appName"></h1>
     <a id="setcookie">
-        <span></span>啟動選課作業時間無限</span>
+        <span id="text">啟動選課作業時間無限</span>
     </a>
-    <p>製作: 吳自回</p>
-    <script language="javascript" src="app.js"></script>
 
+    <div>
+
+        <p><b>近期行事曆</b></p>
+        <ul id="calendar">
+        </ul>
+    </div>
+    <div class="container">
+        <img id="maker" src="GitHub-Mark-32px.png" onclick="linkGithub()">
+    </div>
+    
+
+    <script language="javascript" src="app.js"></script>
 </body>
 
 </html>
